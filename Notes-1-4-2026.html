@@ -1,0 +1,539 @@
+<html>
+        <head><title>Downloaded HTML</title></head>
+        <body>
+            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Prime Web | Premium Dark AI Web Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#050505',
+                        darkgray: '#121212',
+                        gold: '#D4AF37',
+                        goldhover: '#F3CF55',
+                        accentGreen: '#10B981',
+                        accentRed: '#EF4444'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'scroll-ticker': 'scroll 25s linear infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'glow-pulse': 'glowPulse 3s infinite alternate'
+                    },
+                    keyframes: {
+                        scroll: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(-100%)' }
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        glowPulse: {
+                            '0%': { boxShadow: '0 0 5px rgba(212, 175, 55, 0.2)' },
+                            '100%': { boxShadow: '0 0 25px rgba(212, 175, 55, 0.5)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        body {
+            background-color: #050505;
+            color: #E5E5E5;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            height: 400px;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.15));
+        }
+        
+        .glass-nav {
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .metric-glow-gold {
+            color: #D4AF37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .metric-glow-green {
+            color: #10B981;
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.6);
+        }
+
+        .metric-glow-red {
+            color: #EF4444;
+            text-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+        }
+        
+        .gold-gradient-text {
+            background: linear-gradient(to bottom right, #D4AF37, #F3CF55, #AA8E2C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+        }
+
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold selection:text-black">
+
+    <!-- Premium Dark Navigation -->
+    <nav class="fixed w-full top-0 z-50 glass-nav py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="font-heading font-extrabold text-2xl tracking-tight text-white">
+            LUCKY<span class="text-gold">PRIME</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+            <a href="#problem" class="hover:text-gold transition-colors">Performance</a>
+            <a href="#solution" class="hover:text-gold transition-colors">Our Tech</a>
+            <a href="#reviews" class="hover:text-gold transition-colors">Reviews</a>
+            <a href="#process" class="hover:text-gold transition-colors">Blueprint</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="tel:09014399699" class="hidden lg:flex items-center text-white/80 hover:text-white font-bold transition-colors">
+                <span class="mr-2">09014399699</span>
+            </a>
+            <a href="https://wa.me/2347019697212" target="_blank" class="flex items-center justify-center bg-gold hover:bg-goldhover text-black font-bold py-2 px-5 md:px-6 rounded-full transition-all btn-glow text-sm">
+                WhatsApp Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Dark Hero Section -->
+    <header class="pt-40 pb-20 md:pt-56 md:pb-32 px-6 relative overflow-hidden flex flex-col items-center justify-center text-center min-h-[100vh]">
+        <!-- Animated Background Elements -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 blur-[120px] rounded-full animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/10 blur-[150px] rounded-full animate-pulse" style="animation-delay: 2s;"></div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto animate-fade-in-up">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-gold/10 text-gold font-bold text-xs tracking-[0.2em] mb-8 uppercase border border-gold/20 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                Exclusive AI Web Architecture
+            </span>
+            <h1 class="font-heading text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] tracking-tighter mb-10 text-white">
+                ELITE DESIGN.<br><span class="gold-gradient-text">EXPLOSIVE GROWTH.</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+                We replace outdated websites with high-octane digital weapons engineered for conversion, speed, and premium positioning.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="https://wa.me/2347019697212" target="_blank" class="w-full sm:w-auto flex items-center justify-center bg-gold hover:bg-goldhover text-black text-xl font-black py-5 px-10 rounded-2xl transition-all btn-glow transform hover:-translate-y-1">
+                    START YOUR PROJECT
+                </a>
+                <a href="tel:09014399699" class="w-full sm:w-auto flex items-center justify-center bg-transparent border-2 border-white/20 text-white hover:bg-white hover:text-black text-xl font-bold py-5 px-10 rounded-2xl transition-all">
+                    Call: 09014399699
+                </a>
+            </div>
+        </div>
+        
+        <div class="mt-24 w-full max-w-6xl mx-auto relative z-10">
+            <div class="w-full h-14 bg-white/5 backdrop-blur-md text-gold/80 flex items-center overflow-hidden rounded-xl border border-white/10 shadow-2xl">
+                <div class="whitespace-nowrap animate-scroll-ticker font-bold tracking-widest text-xs md:text-sm flex items-center uppercase">
+                    <span class="mx-12">• NEXT-GEN AI ARCHITECTURE</span>
+                    <span class="mx-12">• 100% MOBILE PERFORMANCE</span>
+                    <span class="mx-12">• CONVERSION PSYCHOLOGY</span>
+                    <span class="mx-12">• NEXT-GEN AI ARCHITECTURE</span>
+                    <span class="mx-12">• 100% MOBILE PERFORMANCE</span>
+                    <span class="mx-12">• CONVERSION PSYCHOLOGY</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Glowing Metrics Section -->
+    <section id="problem" class="py-32 px-6 bg-[#080808] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-heading text-4xl md:text-6xl font-black mb-6 text-white">Data Don't Lie.</h2>
+                <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+                    Observe the contrast between a standard local site and the <span class="text-gold font-bold">Lucky Prime Elite Engine</span>.
+                </p>
+            </div>
+
+            <div class="bg-black/40 rounded-[3rem] p-8 md:p-16 border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)] flex flex-col lg:flex-row gap-16 items-center relative backdrop-blur-xl">
+                
+                <div class="w-full lg:w-2/5 space-y-10 relative z-10">
+                    <div class="space-y-4">
+                        <h3 class="font-heading text-4xl font-extrabold text-white">The ROI of AI</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed">Typical Nigerian business websites leak revenue through slow loads and poor design. We fix the leaks.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="glass-card p-6 rounded-3xl">
+                            <div class="text-gray-500 text-xs uppercase font-black mb-3 tracking-widest">Conversion</div>
+                            <div id="stat-conv" class="text-4xl font-black metric-glow-red">1.2%</div>
+                        </div>
+                        <div class="glass-card p-6 rounded-3xl">
+                            <div class="text-gray-500 text-xs uppercase font-black mb-3 tracking-widest">Speed Score</div>
+                            <div id="stat-speed" class="text-4xl font-black text-white/50">45%</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gold/5 p-8 rounded-[2rem] border border-gold/20 shadow-inner">
+                        <div class="flex justify-between items-center mb-8">
+                            <span class="text-white/80 font-bold uppercase text-xs tracking-widest">Live Engine Status:</span>
+                            <span id="chartStatus" class="text-red-500 font-black bg-red-500/10 px-4 py-1.5 rounded-full text-[10px] uppercase tracking-widest border border-red-500/20">Standard Performance</span>
+                        </div>
+                        <button id="toggleDataBtn" class="w-full bg-gold hover:bg-goldhover text-black font-black py-5 px-4 rounded-2xl transition-all flex items-center justify-center gap-4 btn-glow group">
+                            <span class="text-2xl group-hover:scale-125 transition-transform">&#128640;</span> 
+                            <span>UPGRADE MY PERFORMANCE</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-3/5 relative">
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-32 px-6 bg-obsidian relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <span class="text-gold font-black tracking-[.3em] uppercase text-xs mb-4 block">Proven Results</span>
+                <h2 class="font-heading text-4xl md:text-5xl font-black text-white">Elite Experiences.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-[2rem] relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold mb-6">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-300 italic mb-8 leading-relaxed">
+                            "Before Lucky Prime, our site felt like a template from 2010. They built us a dark, premium storefront that actually converts. Our monthly inquiries doubled within 3 weeks of launch."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center font-bold text-gold">TO</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Tunde O.</h4>
+                            <p class="text-gray-500 text-xs">CEO, Lagos Real Estate Hub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-[2rem] relative flex flex-col justify-between border-gold/20 scale-105 shadow-[0_0_30px_rgba(212,175,55,0.05)]">
+                    <div>
+                        <div class="flex text-gold mb-6">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-300 italic mb-8 leading-relaxed">
+                            "The speed is what shocked me. Our page loads instantly now even on slow mobile networks in Abuja. It’s not just a website; it’s a high-performance sales engine."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center font-bold text-gold">AE</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Amara E.</h4>
+                            <p class="text-gray-500 text-xs">Founder, Luxe Beauty Supply</p>
+                        </div>
+                    </div>
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-black px-4 py-1 rounded-full text-[10px] font-black tracking-widest uppercase">Most Recent</div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-[2rem] relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-gold mb-6">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                        </div>
+                        <p class="text-gray-300 italic mb-8 leading-relaxed">
+                            "Dealing with Lucky Prime was seamless. They understood the high-end look I wanted for my law firm immediately. The design is intimidatingly professional."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center font-bold text-gold">IK</div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Ibrahim K.</h4>
+                            <p class="text-gray-500 text-xs">Managing Partner, IK Legal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Feature Cards -->
+    <section id="solution" class="py-32 px-6 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <span class="text-gold font-black tracking-[.3em] uppercase text-xs mb-4 block">The Blueprint</span>
+                <h2 class="font-heading text-4xl md:text-6xl font-black mb-8 text-white">Engineered for Dominance.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="glass-card p-10 rounded-[2.5rem] group">
+                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-8 text-gold text-3xl group-hover:scale-110 transition-transform">
+                        &#10024;
+                    </div>
+                    <h3 class="font-heading font-black text-xl mb-4 text-white">Visual Authority</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">We build high-end aesthetics that instantly establish you as the #1 choice in your niche.</p>
+                </div>
+
+                <div class="glass-card p-10 rounded-[2.5rem] group">
+                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-8 text-gold text-3xl group-hover:scale-110 transition-transform">
+                        &#128266;
+                    </div>
+                    <h3 class="font-heading font-black text-xl mb-4 text-white">Hyper Speed</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Lightning-fast response times that keep visitors on your page and Google loving your site.</p>
+                </div>
+
+                <div class="glass-card p-10 rounded-[2.5rem] group">
+                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-8 text-gold text-3xl group-hover:scale-110 transition-transform">
+                        &#128184;
+                    </div>
+                    <h3 class="font-heading font-black text-xl mb-4 text-white">Profit Hooks</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Direct-response psychology baked into every pixel to maximize your sales pipeline.</p>
+                </div>
+
+                <div class="glass-card p-10 rounded-[2.5rem] group">
+                    <div class="w-16 h-16 bg-gold/10 rounded-2xl flex items-center justify-center mb-8 text-gold text-3xl group-hover:scale-110 transition-transform">
+                        &#128641;
+                    </div>
+                    <h3 class="font-heading font-black text-xl mb-4 text-white">AI Scale</h3>
+                    <p class="text-gray-400 leading-relaxed text-sm">Built on scalable architecture that grows with your business from 10 to 1,000,000 users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Process Section -->
+    <section id="process" class="py-32 px-6 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="font-heading text-4xl md:text-6xl font-black mb-6 text-white">Your Path to Luxury.</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-start relative mt-10">
+                <div class="hidden md:block absolute top-14 left-0 w-full h-[1px] bg-white/10 z-0"></div>
+                
+                <div class="relative z-10 flex flex-col items-center text-center w-full md:w-1/4 px-6 mb-16 md:mb-0 group">
+                    <div class="w-20 h-20 rounded-full bg-obsidian border-2 border-white/20 flex items-center justify-center text-2xl font-black group-hover:border-gold group-hover:text-gold transition-all duration-500 mb-8 shadow-2xl">
+                        01
+                    </div>
+                    <h3 class="text-xl font-black mb-4 text-white">Ignition</h3>
+                    <p class="text-gray-500 text-sm">Contact 09014399699 or WhatsApp. A quick chat starts the engine.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center w-full md:w-1/4 px-6 mb-16 md:mb-0 group">
+                    <div class="w-20 h-20 rounded-full bg-obsidian border-2 border-white/20 flex items-center justify-center text-2xl font-black group-hover:border-gold group-hover:text-gold transition-all duration-500 mb-8 shadow-2xl">
+                        02
+                    </div>
+                    <h3 class="text-xl font-black mb-4 text-white">Target</h3>
+                    <p class="text-gray-500 text-sm">We define your audience and build a strategy that hits them precisely.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center w-full md:w-1/4 px-6 mb-16 md:mb-0 group">
+                    <div class="w-20 h-20 rounded-full bg-obsidian border-2 border-white/20 flex items-center justify-center text-2xl font-black group-hover:border-gold group-hover:text-gold transition-all duration-500 mb-8 shadow-2xl">
+                        03
+                    </div>
+                    <h3 class="text-xl font-black mb-4 text-white">Forge</h3>
+                    <p class="text-gray-500 text-sm">Our AI systems and master designers craft your high-end storefront.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center w-full md:w-1/4 px-6 group">
+                    <div class="w-20 h-20 rounded-full bg-obsidian border-2 border-white/20 flex items-center justify-center text-2xl font-black group-hover:border-gold group-hover:text-gold transition-all duration-500 mb-8 shadow-2xl">
+                        04
+                    </div>
+                    <h3 class="text-xl font-black mb-4 text-white">Orbit</h3>
+                    <p class="text-gray-500 text-sm">We launch. You dominate. Your competitors fall behind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Footer -->
+    <footer class="bg-[#050505] text-gray-500 py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="text-center md:text-left">
+                <div class="font-heading font-black text-3xl tracking-tight text-white mb-4">
+                    LUCKY<span class="text-gold">PRIME</span>
+                </div>
+                <p class="text-sm max-w-sm mb-6">Designing the future of Nigerian business, one pixel at a time.</p>
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                     <a href="tel:09014399699" class="text-white font-bold text-xl hover:text-gold transition-colors">09014399699</a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:items-end gap-4 text-sm">
+                <a href="https://wa.me/2347019697212" target="_blank" class="text-white hover:text-gold transition-colors flex items-center gap-3 bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                    <span class="text-lg">&#128172;</span> WhatsApp Headquarters
+                </a>
+                <div class="flex gap-8 text-xs font-bold uppercase tracking-widest mt-4">
+                    <a href="#" class="hover:text-gold">Instagram</a>
+                    <a href="#" class="hover:text-gold">LinkedIn</a>
+                    <a href="#" class="hover:text-gold">X (Twitter)</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-[10px] text-center uppercase tracking-[0.4em]">
+            &copy; <script>document.write(new Date().getFullYear())</script> LUCKY PRIME WEB LABS.
+        </div>
+    </footer>
+
+    <script>
+        // Chart Logic
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        
+        const gradientGold = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientGold.addColorStop(0, 'rgba(212, 175, 55, 0.8)');
+        gradientGold.addColorStop(1, 'rgba(212, 175, 55, 0.05)');
+
+        const gradientRed = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientRed.addColorStop(0, 'rgba(239, 68, 68, 0.6)');
+        gradientRed.addColorStop(1, 'rgba(239, 68, 68, 0)');
+
+        const gradientGreen = ctx.createLinearGradient(0, 0, 0, 400);
+        gradientGreen.addColorStop(0, 'rgba(16, 185, 129, 0.6)');
+        gradientGreen.addColorStop(1, 'rgba(16, 185, 129, 0)');
+
+        const labels = ['Conversion Rate', 'Site Speed', 'UX Authority', 'Bounce Rate'];
+        const dataBad = [1.2, 45, 12, 78];
+        const dataGood = [9.4, 98, 92, 15];
+        let currentState = 'bad';
+
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: dataBad,
+                    backgroundColor: [gradientRed, gradientRed, gradientRed, 'rgba(255,255,255,0.05)'],
+                    borderColor: 'rgba(239, 68, 68, 0.3)',
+                    borderWidth: 1,
+                    borderRadius: 15,
+                    barThickness: 50
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        ticks: { color: 'rgba(255, 255, 255, 0.2)' }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: 'rgba(255, 255, 255, 0.4)', font: { size: 10, weight: 'bold' } }
+                    }
+                },
+                animation: { duration: 1500, easing: 'easeOutQuart' }
+            }
+        });
+
+        // Counter logic
+        function animateValue(id, start, end, duration, suffix = "") {
+            const obj = document.getElementById(id);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const currentVal = (progress * (end - start) + start).toFixed(1);
+                obj.innerText = currentVal + suffix;
+                if (progress < 1) window.requestAnimationFrame(step);
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const btn = document.getElementById('toggleDataBtn');
+        const status = document.getElementById('chartStatus');
+        const statConv = document.getElementById('stat-conv');
+        const statSpeed = document.getElementById('stat-speed');
+
+        btn.addEventListener('click', () => {
+            if (currentState === 'bad') {
+                myChart.data.datasets[0].data = dataGood;
+                myChart.data.datasets[0].backgroundColor = [gradientGold, gradientGold, gradientGold, gradientGreen];
+                myChart.data.datasets[0].borderColor = 'rgba(212, 175, 55, 0.5)';
+                myChart.update();
+                
+                animateValue("stat-conv", 1.2, 9.4, 1000, "%");
+                animateValue("stat-speed", 45, 98, 1000, "%");
+                
+                statConv.className = "text-4xl font-black metric-glow-gold";
+                statSpeed.className = "text-4xl font-black text-white";
+                
+                currentState = 'good';
+                status.textContent = "Elite Engine Active";
+                status.className = "text-gold font-black bg-gold/10 px-4 py-1.5 rounded-full text-[10px] uppercase tracking-widest border border-gold/30 animate-pulse";
+                btn.innerHTML = "<span>&#8634;</span> RESET ENGINE";
+            } else {
+                myChart.data.datasets[0].data = dataBad;
+                myChart.data.datasets[0].backgroundColor = [gradientRed, gradientRed, gradientRed, 'rgba(255,255,255,0.05)'];
+                myChart.data.datasets[0].borderColor = 'rgba(239, 68, 68, 0.3)';
+                myChart.update();
+
+                animateValue("stat-conv", 9.4, 1.2, 1000, "%");
+                animateValue("stat-speed", 98, 45, 1000, "%");
+                
+                statConv.className = "text-4xl font-black metric-glow-red";
+                statSpeed.className = "text-4xl font-black text-white/50";
+                
+                currentState = 'bad';
+                status.textContent = "Standard Performance";
+                status.className = "text-red-500 font-black bg-red-500/10 px-4 py-1.5 rounded-full text-[10px] uppercase tracking-widest border border-red-500/20";
+                btn.innerHTML = "<span class='text-2xl'>&#128640;</span> UPGRADE MY PERFORMANCE";
+            }
+        });
+    </script>
+</body>
+</html>
+
+</pre>
+        </body>
+    </html>
